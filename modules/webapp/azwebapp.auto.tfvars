@@ -1,7 +1,7 @@
 ####################
 # Common Variables #
 ####################
-location    = "canadacenteral"
+location    = "canadacentral"
 company     = "amindev"
 environment = "dev"
 owner       = "Amin Niktash"

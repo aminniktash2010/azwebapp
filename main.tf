@@ -9,9 +9,4 @@ provider "azurerm" {
 }
 module "webapp" {
   source = "./modules/webapp"
-  
-  tags = {
-    Terraform   = "true"
-    Environment = "dev"
-  }
   }

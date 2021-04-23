@@ -33,7 +33,6 @@ module "nginx" {
   description = "nginx"
   environment = "dev"
   network-vnet-cidr = "10.10.0.0/16"
-  nginx_admin_password = "Password123!"
   nginx_admin_username = "amin"
   nginx_vm_size = "Standard_B2s"
   owner = "Amin Niktash"

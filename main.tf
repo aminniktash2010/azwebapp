@@ -21,4 +21,3 @@ module "webapp" {
   app_name    = "azapp01"
 
   }
-}}

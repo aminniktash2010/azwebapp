@@ -1,23 +1,12 @@
-# Define Terraform provider
-terraform {
-  required_version = ">= 0.12"
-}
+//--------------------------------------------------------------------
+// Modules
+module "demo" {
+  source  = "app.terraform.io/nik1/demo/webapp"
+  version = "1.0.2"
 
-
-# Configure the Azure provider
-provider "azurerm" {
-  environment = "public"
-  features {}
-}
-
-module "webapp" {
-  source = "./modules/webapp"
-  location    = "canadacentral"
-  company     = "amindev"
+  app_name = "webapp1"
+  company = "nik"
+  description = "test webbapp"
   environment = "dev"
-  owner       = "Amin Niktash"
-  description = "Linux App Service with .NET Core"
-  region      = "ne"
-  app_name    = "azapp01"
-
-  }
+  owner = "amin"
+}

@@ -9,5 +9,5 @@ provider "azurerm" {
 }
 module "webapp" {
   source = "./modules/webapp"
-  env = "dev"
+  env = var.enviroment
   }

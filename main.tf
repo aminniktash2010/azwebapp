@@ -18,4 +18,4 @@ module "webapp" {
   tags = {
     Terraform   = "true"
     Environment = "dev"
-  }
+  }}

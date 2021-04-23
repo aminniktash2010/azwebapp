@@ -27,7 +27,7 @@ module "demo" {
 // Modules
 module "nginx" {
   source  = "app.terraform.io/nik1/nginx/module"
-  version = "1.0.5"
+  version = "1.0.4"
 
   company = "nik"
   description = "nginx"

@@ -8,7 +8,7 @@ terraform {
 provider "azurerm" {
   environment = "public"
   features {}
-}}
+}
 
 module "webapp" {
   source = "./modules/webapp"

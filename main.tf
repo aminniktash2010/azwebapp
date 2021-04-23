@@ -9,10 +9,9 @@ provider "azurerm" {
 }
 module "webapp" {
   source = "./modules/webapp"
-
-  bucket_name = "mynewapp"
-
+  
   tags = {
     Terraform   = "true"
     Environment = "dev"
+  }
   }

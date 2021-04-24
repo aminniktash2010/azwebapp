@@ -41,6 +41,7 @@ module "nginx" {
   vm-subnet-cidr = "10.10.1.0/24"
 }
 //---------------------------------------------------
+// Modules
 module "sql" {
   source  = "app.terraform.io/nik1/sql/module"
   version = "1.0.0"

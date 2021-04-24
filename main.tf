@@ -52,3 +52,10 @@ module "sql" {
   sql_admin_password      = "@Aa123456789!"
 
 }
+
+//---------------------------------------------------
+// Modules
+module "loadbalancer" {
+  source  = "app.terraform.io/nik1/loadbalancer/module"
+  version = "1.0.1"
+}

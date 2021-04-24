@@ -44,7 +44,7 @@ module "nginx" {
 // Modules
 module "sql" {
   source  = "app.terraform.io/nik1/sql/module"
-  version = "1.0.4"
+  version = "1.0.5"
   # insert required variables here
   sql_server_name         = "amin-sqlsrv01"
   sql_database_name       = "parsa-sql"

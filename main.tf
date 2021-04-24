@@ -57,5 +57,5 @@ module "sql" {
 // Modules
 module "loadbalancer" {
   source  = "app.terraform.io/nik1/loadbalancer/module"
-  version = "1.0.1"
+  version = "1.0.2"
 }

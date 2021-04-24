@@ -44,7 +44,7 @@ module "nginx" {
 // Modules
 module "sql" {
   source  = "app.terraform.io/nik1/sql/module"
-  version = "1.0.2"
+  version = "1.0.3"
   # insert required variables here
   sql_server_name         = "amin-sqlsrv01"
   sql_database_name       = "parsa-sql"
@@ -52,3 +52,8 @@ module "sql" {
   sql_admin_password      = "@Aa123456789!"
 
 }
+ connection_string {
+    name  = "Database"
+    type  = "SQLAzure"
+    value = "Server=tcp:azurerm_sql_server.sqldb.fully_qualified_domain_name Database=azurerm_sql_database.db.name;User ID=azurerm_sql_server.sqldb.administrator_login;Password=azurerm_sql_server.sqldb.administrator_login_password;Trusted_Connection=False;Encrypt=True;"
+  }

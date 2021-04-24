@@ -40,4 +40,14 @@ module "nginx" {
   prefix = "AZ"
   vm-subnet-cidr = "10.10.1.0/24"
 }
+//---------------------------------------------------
+module "sql" {
+  source  = "app.terraform.io/nik1/sql/module"
+  version = "1.0.0"
+  # insert required variables here
+  sql_server_name         = "amin-sqlsrv01"
+  sql_database_name       = "parsa-sql"
+  sql_admin_login         = "nima"
+  sql_admin_password      = "@Aa123456789!"
 
+}
